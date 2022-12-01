@@ -1,32 +1,49 @@
-"use strict";
-// 07. Explore Type Aliases
-var myName = 'Mahamudul';
-var arr = ['Hasan'];
-var players2 = ['Messi', 'Rolando', 345, true, 'Hello'];
-var add = function (num1, num2, num3) {
-    if (num3 === void 0) { num3 = 0; }
-    return num1 + num2 + num3;
-};
-//? Object Type Aliases
-// type Address = {
+// 08. Explore Interfaces And
+// Difference Between Type Alias And Interface
+
+// interface Person {
+//   name: string;
+//   email: string;
+// }
+
+// let person: Person = {
+//   name: 'John',
+//   email: 'john@example.com',
+// };
+
+//? function signature Type Aliases
+// interface Add {
+//   (num1: number, num2: number, num3: number): number;
+// }
+
+// const add: Add = (num1, num2, num3 = 0) => {
+//   return num1 + num2 + num3;
+// };
+
+//? Object Type Interface(Object er jonno Interface beshi babohar korbo)
+// interface Address {
 //   presentAddress: string;
 //   permanentAddress: string;
-// };
-// type Favorites = {
+// }
+
+// interface Favorite {
 //   type: 'food' | 'player' | 'singer' | 'person';
 //   value: string;
-// }[];
-// type Auth = {
+// }
+
+// interface Auth {
 //   isLoggedIn: boolean;
-// };
-// type Person = {
+// }
+
+// interface Person extends Auth {
 //   name: string;
-//   age: number;
+//   age?: number;
 //   email: string;
 //   phone: string | string[];
 //   address: Address;
-//   favorites: Favorites;
-// } & Auth;
+//   favorites?: Favorite[];
+// }
+
 // const person: Person = {
 //   name: 'John Smith',
 //   age: 34,
@@ -54,5 +71,5 @@ var add = function (num1, num2, num3) {
 //       value: 'John Doe',
 //     },
 //   ],
-//   isLoggedIn: true,
+//   isLoggedIn: false,
 // };
