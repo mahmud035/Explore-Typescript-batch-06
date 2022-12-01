@@ -17,20 +17,20 @@ interface User {
 // };
 // user?.email;
 
-interface Description {
-  John: string;
-  Smith: string;
-}
+// interface Description {
+//   John: string;
+//   Smith: string;
+// }
 
-let description: Description = {} as Description;
+// let description: Description = {} as Description;
 
-const friends = ['John', 'Smith'] as const;
+// const friends = ['John', 'Smith'] as const;
 
-const user = {
-  name: 'userName',
-  email: 'userEmail',
-} as const;
+// const user = {
+//   name: 'userName',
+//   email: 'userEmail',
+// } as const;
 
-friends.forEach((friend) => {
-  description[friend] = friend + ' on fire';
-});
+// friends.forEach((friend) => {
+//   description[friend] = friend + ' on fire';
+// });

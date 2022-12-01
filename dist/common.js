@@ -1,11 +1,21 @@
 "use strict";
 var language = 'Typescript';
-var description = {};
-var friends = ['John', 'Smith'];
-var user = {
-    name: 'userName',
-    email: 'userEmail',
-};
-friends.forEach(function (friend) {
-    description[friend] = friend + ' on fire';
-});
+// let user = {} as User;
+// user = {
+//   name: 'userName',
+//   email: 'userEmail',
+// };
+// user?.email;
+// interface Description {
+//   John: string;
+//   Smith: string;
+// }
+// let description: Description = {} as Description;
+// const friends = ['John', 'Smith'] as const;
+// const user = {
+//   name: 'userName',
+//   email: 'userEmail',
+// } as const;
+// friends.forEach((friend) => {
+//   description[friend] = friend + ' on fire';
+// });

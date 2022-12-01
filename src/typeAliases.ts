@@ -83,7 +83,7 @@ const person: Person = {
 
 if (Array.isArray(person.phone)) {
   person.phone.map((value, index) => {
-    console.log(value);
+    // console.log(value);
   });
 } else {
   person.phone.length;

@@ -42,7 +42,7 @@ var person = {
 //   });
 if (Array.isArray(person.phone)) {
     person.phone.map(function (value, index) {
-        console.log(value);
+        // console.log(value);
     });
 }
 else {
